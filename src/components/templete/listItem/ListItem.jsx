@@ -5,6 +5,7 @@ import ListItemText from '@mui/material/ListItemText';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import AddIcon from '@mui/icons-material/Add';
+import LogoutIcon from '@mui/icons-material/Logout';
 import { useNavigate } from 'react-router-dom';
 
 export const ListItem = () => {
@@ -33,6 +34,13 @@ export const ListItem = () => {
         <AddIcon/>
       </ListItemIcon>
       <ListItemText primary="Add Items" />
+    </ListItemButton>
+  
+    <ListItemButton onClick={()=>navigate('/')}>
+      <ListItemIcon>
+        <LogoutIcon/>
+      </ListItemIcon>
+      <ListItemText primary="Log Out" />
     </ListItemButton>
   
   </React.Fragment>
